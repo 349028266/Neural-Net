@@ -15,5 +15,9 @@ class Neuron:
     return sigmoid(total)
   
 weights =  np.array([0,2])
+input = np.array([0,1])
 bias  = 4 
 neuron = Neuron(weights, bias)
+
+
+print(neuron.feedforward(input))
